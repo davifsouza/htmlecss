@@ -27,6 +27,11 @@ header a {
 header a:hover {
     color: #ffff3b;
     transition-duration: 0.5s;
+    text-decoration: underline;
+}
+
+#invite::after {
+    content: '\00A0\1F517';
 }
 
 header h1 {
