@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -22,9 +23,19 @@
             background-color: lightgray;
         }
 
+        tbody > tr:nth-child(odd) /*odd(2n-1) = impar, even(2n) = par*/ {
+            background-color: lightgray;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         thead, tfoot {
@@ -55,7 +66,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tfoot>
@@ -176,5 +187,15 @@
         </tbody>
         
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis velit, voluptatibus odio dolor dolores voluptatum sed quod nesciunt sequi consequuntur maiores ipsa corporis doloribus placeat molestias in minima amet exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorum culpa distinctio incidunt nobis voluptate sit aperiam enim quidem, amet, laudantium praesentium quos fugiat saepe quo quisquam eum officia repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam beatae exercitationem eaque vitae enim iste deserunt provident sint neque quae, porro atque. Sed nisi, dignissimos blanditiis corporis beatae fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus pariatur sapiente laudantium repellat quis blanditiis velit harum at totam ipsa, necessitatibus inventore nobis, et hic accusamus qui nulla maiores!</p>
 </body>
 </html>
